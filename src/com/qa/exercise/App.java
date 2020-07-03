@@ -7,6 +7,10 @@ import java.util.stream.*;
 
 public class App {
 	public static void main(String args[]) {
+		// Generate numbers from 1 to 9
+		System.out.println(IntStream.range(1, 9)
+				.mapToObj(String::valueOf)
+				.collect(Collectors.toList()));
 		////////////////////////////////////////////////////////////
 		// Print all names with "Hello " before, except James.
 		////////////////////////////////////////////////////////////
